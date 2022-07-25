@@ -327,14 +327,9 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted; // change sorted from true to false and false to true
 });
 
-// // Turns movement rows to alternating colors if you click current balance ammount
-// labelBalance.addEventListener('click', function () {
-//   [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
-//     if (i % 2 === 0) row.style.backgroundColor = 'lightgrey';
-//   });
-// });
-
-// setInterval(function () {
-//   const now = new Date();
-//   console.log(now);
-// }, 1000);
+// Turns movement rows to alternating colors if you click current balance ammount
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    if (i % 2 === 0) row.style.backgroundColor = 'lightgrey';
+  });
+});
